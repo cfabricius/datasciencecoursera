@@ -1,4 +1,5 @@
-==Objects==
+Objects
+=======
 
 **Object classes**
 
@@ -22,7 +23,8 @@
 attributes()
 
 
-==Vectors and lists==
+Vectors and lists
+=========
 
 * vector()
 * c()
