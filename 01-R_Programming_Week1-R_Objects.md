@@ -138,6 +138,7 @@ Store element of different classes in each column
 R objects can have names
 
 > names(x) <- c("foo", "bar")
+>
 > x
 
 foo bar 
