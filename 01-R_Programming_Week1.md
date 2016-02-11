@@ -34,6 +34,8 @@ Vectors and lists
 > x <- c("a", "b", "c") 
 > x <- 9:29
 
+
+
 **Coerce objects**
 
 > x <- 0:6
@@ -82,3 +84,23 @@ $dim
 > rbind(x, y) # row bind x and y
 
 
+**Factors**
+
+
+* Labeled vectors.
+
+> "yes",  > x <- factor(c("yes", "yes", "no", "yes",  "no")
+
+5 values,  2 levels 
+
+> table(x) 
+
+X no=2 yes=3
+
+> unclass(x) 
+
+[1] 2 2 1 2 1
+
+Ordered
+
+> "yes",  > x <- factor(c("yes", "yes", "no", "yes",  "no"), levels=c("yes", "no") 
