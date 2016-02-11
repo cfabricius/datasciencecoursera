@@ -23,7 +23,9 @@ Same as read.table, but default seperator is comma.
 colClasses makes read.table MUCH faster
 
 > initial <- read.table("dataset.txt", nrows = 100) # nrows helps with memory usage
+>
 > classes <-sapply(initial, class)
+>
 > tabAll <- read.table("datatable.txt", colClasses = classes)
 
 **Textual Formats**
@@ -52,5 +54,6 @@ open
 * rb, wb, ab (same, but binary)
 
 > con <-gzfile("words.gz", "r")
+>
 > x <- readlines(con, 10)
 
