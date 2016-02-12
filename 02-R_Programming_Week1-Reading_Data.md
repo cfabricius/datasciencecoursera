@@ -7,9 +7,9 @@ Functions that read data from files and return data frames
 
 > data <- read.table("foo.txt")
 
-**read.csv**
+**read.csv** (same as read.table, but default seperator is comma)
 
-Same as read.table, but default seperator is comma.
+Read first two lines from a csv
 
 > read.csv("hw1_data.csv", nrows=2, header=TRUE)
 
@@ -17,8 +17,11 @@ Same as read.table, but default seperator is comma.
     1    41     190  7.4   67     5   1
     2    36     118  8.0   72     5   2
 
+Read last 10 lines from a csv (given csv with 154 rows, including header)
 
-* readLines
+> read.csv("hw1_data.csv", header = FALSE, skip = 144)
+
+
 * source (Reading R code files, inverse of dump)
 * dget (Reading R code files, inverse of dput)
 * load (loading saved workspaces)
