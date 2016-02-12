@@ -21,6 +21,10 @@ Read last 10 lines from a csv (given csv with 154 rows, including header)
 
 > read.csv("hw1_data.csv", header = FALSE, skip = 144)
 
+Read only first column (given csv with 6 columns)
+
+> d <- read.csv("hw1_data.csv", header = TRUE, colClasses=c(NA, "NULL", "NULL", "NULL", "NULL", "NULL"))
+
 
 * source (Reading R code files, inverse of dump)
 * dget (Reading R code files, inverse of dput)
