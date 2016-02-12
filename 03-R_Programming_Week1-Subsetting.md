@@ -118,3 +118,11 @@ NULL
 > y[good]
 
 [1] "b" "d" "f"
+
+Counting missing values
+
+> bad <- is.na(mydata)
+
+> dbad = mydata[bad]
+
+> sum(is.na(dbad))
