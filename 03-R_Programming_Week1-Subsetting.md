@@ -24,6 +24,7 @@ Subsetting
 **Subsetting Lists**
 
 > x <- list(foo = 1:4, bar = 0.6)
+
 > x[1] # returns the object, in this case a list
 
 $foo 
@@ -76,6 +77,7 @@ NULL
 **Partial Matching**
 
 > x <- list(aardvark = 1:5)
+
 > x$a # partial match for 'aardvark'
 
 [1] 1 2 3 4 5
@@ -91,15 +93,20 @@ NULL
 **Removing missing values**
 
 > x <- c(1, 2, NA, 4, NA, 5)
+
 > bad <- is.na(x)
+
 > x[!bad]
 
 [1] 1 2 4 5
 
 
 > x <- c(1, 2, NA, 4, NA, 5)
+
 > y <- c("a", "b", NA, "d", NA, "f")
+
 > good <- complete.cases(x, y)
+
 > good
 
 [1] TRUE TRUE FALSE TRUE FALSE TRUE
@@ -111,4 +118,3 @@ NULL
 > y[good]
 
 [1] "b" "d" "f"
-
