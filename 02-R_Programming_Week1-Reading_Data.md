@@ -34,6 +34,7 @@ Dumped or dput'ed R objects
 
 
 > y <- data.frame(a = 1, b = "a")
+>
 > dput(y)
 
     structure(list(a = 1,
@@ -55,5 +56,5 @@ open
 
 > con <-gzfile("words.gz", "r")
 >
-> x <- readlines(con, 10)
+> x <- readLines(con, 10)
 
