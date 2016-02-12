@@ -11,6 +11,13 @@ Functions that read data from files and return data frames
 
 Same as read.table, but default seperator is comma.
 
+> read.csv("hw1_data.csv", nrows=2, header=TRUE)
+
+      Ozone Solar.R Wind Temp Month Day
+    1    41     190  7.4   67     5   1
+    2    36     118  8.0   72     5   2
+
+
 * readLines
 * source (Reading R code files, inverse of dump)
 * dget (Reading R code files, inverse of dput)
